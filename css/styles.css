@@ -41,6 +41,9 @@ a {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  background-color: #ffffff;
 }
 
 .container-header {
@@ -93,6 +96,20 @@ a {
   color: #404bbf;
 }
 
+.menu-header-defis {
+  color: #404bbf;
+}
+
+.menu-header-defis::after {
+  content: '';
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
+  display: block;
+  margin: 0 auto;
+}
+
 .contact {
   font-style: normal;
 }
@@ -127,6 +144,14 @@ a {
 
 .section-main {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/people-office-fon.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
 }

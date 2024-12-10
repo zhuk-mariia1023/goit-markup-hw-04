@@ -154,6 +154,7 @@ a {
   background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
 }
 
 .title-main {
@@ -278,12 +279,36 @@ a {
   text-align: center;
 }
 
-.section-team {
-  background-color: #f4f4fd;
+.icon-team {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-shrink: 0;
+  align-self: flex-end;
+  margin-top: 8px;
 }
 
-.images {
-  background-color: url('path_to_image');
+.icon-team .link-icon-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.icon-team .icon {
+  fill: #f4f4fd;
+}
+
+.icon-team .link-icon-team:hover,
+.icon-team .link-icon-team:focus {
+  background-color: #404bbf;
+}
+
+.section-team {
+  background-color: #f4f4fd;
 }
 
 .title-portfolio {
